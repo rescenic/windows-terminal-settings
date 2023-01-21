@@ -1,8 +1,15 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [
+    "actions": 
+    [
         {
-            "command": {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": 
+            {
                 "action": "copy",
                 "singleLine": false
             },
@@ -13,11 +20,8 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -28,24 +32,34 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "experimental.detectURLs": true,
+    "focusFollowMouse": true,
     "initialCols": 110,
     "initialPosition": "0,0",
     "initialRows": 54,
-    "profiles": {
-        "defaults": {
-            "acrylicOpacity": 0.25,
+    "profiles": 
+    {
+        "defaults": 
+        {
             "closeOnExit": "graceful",
             "cursorColor": "#EB3108",
             "cursorHeight": 25,
             "cursorShape": "filledBox",
-            "fontFace": "Hack NF",
-            "fontSize": 8,
-            "fontWeight": "bold",
+            "experimental.retroTerminalEffect": false,
+            "font": 
+            {
+                "face": "Hack NF",
+                "size": 8,
+                "weight": "bold"
+            },
             "historySize": 9999,
+            "intenseTextStyle": "all",
+            "opacity": 85,
             "padding": "0, 0, 0, 0",
-            "useAcrylic": false
+            "useAcrylic": true
         },
-        "list": [
+        "list": 
+        [
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": false,
@@ -53,60 +67,53 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
+                "commandline": "E:/cygwin64/bin/zsh.exe --login -i",
                 "guid": "{0daa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "icon": "E:\\cygwin64\\Cygwin-Terminal.ico",
                 "name": "Cygwin Shell",
-                "commandline": "C:/cygwin64/bin/zsh.exe --login -i",
-                "icon": "C:\\cygwin64\\Cygwin-Terminal.ico",
-                "startingDirectory": "C:\\cygwin64\\home\\Rescenic"
+                "startingDirectory": "E:\\cygwin64\\home\\Rescenic"
             },
             {
-                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
-                "hidden": false,
-                "name": "Git Shell",
-                "source": "Git"
-            },
-            {
+                "commandline": "cmd.exe /c \"set MSYSTEM=MSYS2&& set MSYS=winsymlinks:nativestrict&& set MSYS2_PATH_TYPE=inherit&& E:\\msys64\\usr\\bin\\zsh --login\"",
                 "guid": "{4679ef5c-274f-4999-9386-dd18c3cfdde7}",
+                "icon": "E:\\msys64\\msys2.ico",
                 "name": "MSYS2 Shell",
-                "commandline": "cmd.exe /c \"set MSYSTEM=MSYS2&& set MSYS=winsymlinks:nativestrict&& set MSYS2_PATH_TYPE=inherit&& C:\\msys64\\usr\\bin\\zsh --login\"",
-                "icon": "C:\\msys64\\msys2.ico",
-                "startingDirectory": "C:\\msys64\\home\\Rescenic"
+                "startingDirectory": "E:\\msys64\\home\\Rescenic"
             },
             {
+                "commandline": "cmd.exe /c \"set MSYSTEM=MINGW32&& set MSYS=winsymlinks:nativestrict&& set MSYS2_PATH_TYPE=inherit&& E:\\msys64\\usr\\bin\\zsh --login\"",
                 "guid": "{80eec600-5a75-4332-8d07-4a6e516bc574}",
+                "icon": "E:\\msys64\\mingw32.ico",
                 "name": "MINGW32 Shell",
-                "commandline": "cmd.exe /c \"set MSYSTEM=MINGW32&& set MSYS=winsymlinks:nativestrict&& set MSYS2_PATH_TYPE=inherit&& C:\\msys64\\usr\\bin\\zsh --login\"",
-                "icon": "C:\\msys64\\mingw32.ico",
-                "startingDirectory": "C:\\msys64\\home\\Rescenic"
+                "startingDirectory": "E:\\msys64\\home\\Rescenic"
             },
             {
+                "commandline": "cmd.exe /c \"set MSYSTEM=MINGW64&& set MSYS=winsymlinks:nativestrict&& set MSYS2_PATH_TYPE=inherit&& E:\\msys64\\usr\\bin\\zsh --login\"",
                 "guid": "{3a692334-5ffd-472a-9606-6a6e0fa01d97}",
+                "icon": "E:\\msys64\\mingw64.ico",
                 "name": "MINGW64 Shell",
-                "commandline": "cmd.exe /c \"set MSYSTEM=MINGW64&& set MSYS=winsymlinks:nativestrict&& set MSYS2_PATH_TYPE=inherit&& C:\\msys64\\usr\\bin\\zsh --login\"",
-                "icon": "C:\\msys64\\mingw64.ico",
-                "startingDirectory": "C:\\msys64\\home\\Rescenic"
+                "startingDirectory": "E:\\msys64\\home\\Rescenic"
             },
-            {
-                "guid": "{a5fc61e6-ef08-4857-84aa-94b04bdd4ef8}",
-                "commandline": "C:\\Windows\\System32\\cmd.exe /E:ON /K C:\\Ruby64\\bin\\setrbvars.cmd",
+                        {
+                "guid": "{cdd9845a-24d0-5634-a3b9-638f4f8ead4a}",
                 "hidden": false,
-                "name": "Ruby Shell",
-                "icon": "C:\\Rescenic\\ruby.ico"
+                "icon": "C:\\Rescenic\\kalilinux.ico",
+                "name": "Kali Shell",
+                "source": "Windows.Terminal.Wsl"
             },
             {
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "icon": "C:\\Rescenic\\ubuntu.ico",
                 "name": "Ubuntu Shell",
-                "source": "Windows.Terminal.Wsl",
-                "icon": "C:\\Rescenic\\ubuntu.ico"
+                "source": "Windows.Terminal.Wsl"
             },
             {
-                "commandline": "cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Windows Shell"
             },
             {
-                "commandline": "powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "PowerShell 5.1"
@@ -114,13 +121,13 @@
             {
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
-                "name": "PowerShell 7.2",
+                "name": "PowerShell 7.3",
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
                 "guid": "{a3a2e83a-884a-5379-baa8-16f193a13b21}",
                 "hidden": false,
-                "name": "PowerShell 7.3.p1",
+                "name": "PowerShell 7 Preview",
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
@@ -130,20 +137,44 @@
                 "source": "Yori"
             },
             {
-                "guid": "{6003b06e-79a7-5287-a934-b61d69161552}",
-                "name": "Developer Command Prompt for VS 2019",
-                "commandline": "%comspec%  /k \"%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\VsDevCmd.bat\"",
-                "icon": "%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\Assets\\VisualStudio.70x70.contrast-standard_scale-180.png"
+                "guid": "{02dbe2df-b832-5fc4-b7f5-5ed7365bfcaa}",
+                "hidden": false,
+                "name": "Shell VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{41011d21-447d-50fa-844f-44a128643cf5}",
-                "name": "Developer PowerShell for VS 2019",
-                "commandline": "powershell.exe -noe -c \"&{$vsPath = &(Join-Path ${env:ProgramFiles(x86)} '\\Microsoft Visual Studio\\Installer\\vswhere.exe') -property installationpath; Import-Module (Join-Path $vsPath 'Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll'); Enter-VsDevShell -VsInstallPath $vsPath -SkipAutomaticLocation}\"",
-                "icon": "%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\Assets\\VisualStudio.70x70.contrast-standard_scale-180.png"
+                "guid": "{902625da-da69-5b23-a9bb-2ffbd52f6178}",
+                "hidden": false,
+                "name": "PowerShell VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
+        {
+            "background": "#000000",
+            "black": "#000000",
+            "blue": "#0000AA",
+            "brightBlack": "#555555",
+            "brightBlue": "#5555FF",
+            "brightCyan": "#55FFFF",
+            "brightGreen": "#55FF55",
+            "brightPurple": "#FF55FF",
+            "brightRed": "#FF5555",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFF55",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#00AAAA",
+            "foreground": "#AAAAAA",
+            "green": "#00AA00",
+            "name": "CGA",
+            "purple": "#AA00AA",
+            "red": "#AA0000",
+            "selectionBackground": "#FFFFFF",
+            "white": "#AAAAAA",
+            "yellow": "#AA5500"
+        },
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
