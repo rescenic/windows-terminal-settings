@@ -42,6 +42,7 @@
         "defaults": 
         {
             "closeOnExit": "graceful",
+            "colorScheme": "One Half Dark",
             "cursorColor": "#EB3108",
             "cursorHeight": 25,
             "cursorShape": "filledBox",
@@ -49,12 +50,12 @@
             "font": 
             {
                 "face": "Hack NF",
-                "size": 8,
+                "size": 8.0,
                 "weight": "bold"
             },
             "historySize": 9999,
             "intenseTextStyle": "all",
-            "opacity": 85,
+            "opacity": 70,
             "padding": "0, 0, 0, 0",
             "useAcrylic": true
         },
@@ -94,7 +95,7 @@
                 "name": "MINGW64 Shell",
                 "startingDirectory": "E:\\msys64\\home\\Rescenic"
             },
-                        {
+            {
                 "guid": "{cdd9845a-24d0-5634-a3b9-638f4f8ead4a}",
                 "hidden": false,
                 "icon": "C:\\Rescenic\\kalilinux.ico",
@@ -114,6 +115,15 @@
                 "name": "Windows Shell"
             },
             {
+                "commandline": "cmd /k D:\\laragon\\bin\\cmder\\cmder.bat",
+                "guid": "{396817ac-381c-4896-a0cf-7c8ea12adf87}",
+                "hidden": false,
+                "icon": "D:\\laragon\\laragon.png",
+                "name": "Laragon Shell",
+                "startingDirectory": "D:\\laragon\\www",
+                "tabTitle": "Laragon"
+            },
+            {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "PowerShell 5.1"
@@ -122,13 +132,23 @@
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell 7.3",
+                "opacity": 70,
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
                 "guid": "{a3a2e83a-884a-5379-baa8-16f193a13b21}",
                 "hidden": false,
-                "name": "PowerShell 7 Preview",
+                "name": "PowerShell 7.4",
+                "opacity": 70,
                 "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "guid": "{a5fc61e6-ef08-4857-84aa-94b04bdd4ef8}",
+                "commandline": "C:\\Windows\\System32\\cmd.exe /E:ON /K D:\\Ruby64\\bin\\setrbvars.cmd",
+                "hidden": false,
+                "name": "Ruby Shell",
+                "icon": "C:\\Rescenic\\ruby.ico",
+                "startingDirectory": "D:\\laragon\\www",
             },
             {
                 "guid": "{e58ba53f-c360-5e5c-b3c7-498d490b0751}",
@@ -383,6 +403,7 @@
             "yellow": "#808000"
         }
     ],
-    "tabWidthMode": "compact",
-    "theme": "dark"
+    "tabWidthMode": "equal",
+    "theme": "dark",
+    "themes": []
 }
